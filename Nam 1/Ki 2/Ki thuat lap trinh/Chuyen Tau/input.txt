@@ -1,0 +1,49 @@
+8
+CT001
+Ha Noi
+Thai Nguyen
+06 20
+10 10
+A
+CT002
+Ha Noi
+Thai Nguyen
+07 00
+10 00
+B
+CT003
+Ha Noi
+Hai Phong
+07 00
+11 30
+C
+CT004
+Ha Noi
+Thai Nguyen
+12 30
+15 15
+C
+CT005
+Hai Phong
+Quang Ninh
+06 15
+08 10
+A
+CT006
+Nam Dinh
+Nghe An
+04 00
+10 00
+B
+CT007
+Ha Noi
+Cao Bang
+23 00
+06 00
+A
+CT008
+Ha Noi
+Cao Bang
+05 00
+12 20
+C

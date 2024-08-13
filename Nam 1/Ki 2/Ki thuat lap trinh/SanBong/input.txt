@@ -1,0 +1,4 @@
+3
+HaNoi 2000 1990
+HaiPhong 1500 1992
+NamDinh 1000 2000

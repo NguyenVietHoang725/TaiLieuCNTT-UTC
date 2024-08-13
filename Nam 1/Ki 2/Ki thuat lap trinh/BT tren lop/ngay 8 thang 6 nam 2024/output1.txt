@@ -1,0 +1,8 @@
+Ma tran nhap duoc tu file la:
+| 1 | 2 | 4 |
+| 5 | 3 | 1 |
+| 7 | 4 | 6 |
+
+TBC cac phan tu nam phia duoi duong cheo phu bang: 3.67
+
+Ma tran khong phai la ma tran tam giac tren!

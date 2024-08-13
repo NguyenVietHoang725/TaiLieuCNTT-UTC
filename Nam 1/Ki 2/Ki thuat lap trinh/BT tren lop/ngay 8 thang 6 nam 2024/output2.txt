@@ -1,0 +1,8 @@
+Danh sach thong tin sinh vien:
+|        Nguyen Hoang|         Ha Noi|    B|
+|              Van Tu|      Thai Binh|    A|
+|            Tung Lam|       Cao Bang|    B|
+|           Hoang Mai|      Thai Binh|    A|
+|          Thanh Hang|      Thai Binh|    B|
+Thong tin sinh vien co ten Hoang Mai la:
+|           Hoang Mai|      Thai Binh|    A|

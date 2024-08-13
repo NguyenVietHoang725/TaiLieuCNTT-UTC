@@ -1,0 +1,24 @@
+Ho ten: Nguyen Pham Hoang Mai
+Ma SV: UTC004
+Diem: 9.5
+-------------------
+Ho ten: Nguyen Van Tu
+Ma SV: UTC003
+Diem: 9
+-------------------
+Ho ten: Nguyen Thi Thuy Linh
+Ma SV: UTC006
+Diem: 9
+-------------------
+Ho ten: Nguyen Viet Hoang
+Ma SV: UTC001
+Diem: 8.5
+-------------------
+Ho ten: Nguyen Thi Thanh Hang
+Ma SV: UTC005
+Diem: 8.5
+-------------------
+Ho ten: Luu Tung Lam
+Ma SV: UTC002
+Diem: 8
+-------------------

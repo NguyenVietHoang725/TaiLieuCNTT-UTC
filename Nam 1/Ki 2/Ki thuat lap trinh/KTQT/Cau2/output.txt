@@ -1,0 +1,21 @@
+So nhan vien: 4
+
+Nhan vien 1:
+Hoang
+2000$
+1
+
+Nhan vien 2:
+Mai
+1500$
+2
+
+Nhan vien 3:
+Tu
+2000$
+3
+
+Nhan vien 4:
+Hang
+2500$
+1
