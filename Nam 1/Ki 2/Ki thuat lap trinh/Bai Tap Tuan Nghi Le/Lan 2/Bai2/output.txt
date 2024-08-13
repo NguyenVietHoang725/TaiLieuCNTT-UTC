@@ -1,0 +1,20 @@
+Danh sach thong tin sinh vien:
+|       001|                  Nguyen Hoang|  45000.00$|    A|
+|       002|                        Van Tu|  50000.00$|    B|
+|       003|                    Thanh Hang|  48000.00$|    C|
+|       004|                       Luu Lam|  55000.00$|    A|
+|       005|                     Hoang Mai|  50000.00$|    C|
+
+Luong trung binh theo phong la:
+Phong A : 50000.00
+Phong B : 50000.00
+Phong C : 49000.00
+
+Phong C co luong trung binh thap nhat la: 49000.00
+
+Danh sach nhan vien sap xep theo thu tu luong giam dan la:
+|       004|                       Luu Lam|  55000.00$|    A|
+|       002|                        Van Tu|  50000.00$|    B|
+|       005|                     Hoang Mai|  50000.00$|    C|
+|       003|                    Thanh Hang|  48000.00$|    C|
+|       001|                  Nguyen Hoang|  45000.00$|    A|

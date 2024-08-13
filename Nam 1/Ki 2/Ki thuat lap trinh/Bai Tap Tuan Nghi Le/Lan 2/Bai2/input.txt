@@ -1,0 +1,21 @@
+5
+001
+Nguyen Hoang
+45000
+A
+002
+Van Tu
+50000
+B
+003
+Thanh Hang
+48000
+C
+004
+Luu Lam
+55000
+A
+005
+Hoang Mai
+50000
+C

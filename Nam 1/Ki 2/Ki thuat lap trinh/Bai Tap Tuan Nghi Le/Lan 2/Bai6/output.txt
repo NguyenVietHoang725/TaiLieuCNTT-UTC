@@ -1,0 +1,26 @@
+So nhan vien: 5
+
+Nhan vien 0:
+Nguyen Hoang
+2000$
+1
+
+Nhan vien 1:
+Hoang Mai
+2500$
+2
+
+Nhan vien 2:
+Van Tu
+3000$
+3
+
+Nhan vien 3:
+Tung Lam
+2500$
+1
+
+Nhan vien 4:
+Thanh Hang
+1500$
+3
