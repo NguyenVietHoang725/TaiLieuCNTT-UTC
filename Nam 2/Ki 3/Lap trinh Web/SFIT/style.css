@@ -1,0 +1,52 @@
+/* Reset some default styles */
+body,
+h1,
+p,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Dark gray text color */
+  padding: 20px; /* Adds padding around the content */
+}
+
+h1 {
+  font-size: 2.5em; /* Makes the text larger */
+  color: #0056b3; /* Dark blue text color */
+  text-align: center; /* Centers the text */
+  margin-top: 20px; /* Adds space above the heading */
+}
+
+/* Style the table */
+table {
+  width: 100%; /* Makes the table take the full width of the container */
+  border-collapse: collapse; /* Collapses borders into a single line */
+  margin: 20px 0; /* Adds space above and below the table */
+}
+
+/* Style table headers */
+th {
+  background-color: #0056b3; /* Dark blue background for headers */
+  color: white; /* White text color for headers */
+  padding: 10px; /* Adds padding inside header cells */
+  text-align: left; /* Aligns text to the left */
+  border: 1px solid #ddd; /* Adds a border around the headers */
+}
+
+/* Style table data cells */
+td {
+  padding: 10px; /* Adds padding inside data cells */
+  text-align: left; /* Aligns text to the left */
+  border: 1px solid #ddd; /* Adds a border around data cells */
+}
+
+/* Adds hover effect to table rows */
+tr:hover {
+  background-color: #f1f1f1; /* Light gray background when hovering over rows */
+}
