@@ -1,0 +1,73 @@
+<!-- Dòng khai báo tài liệu -->
+<!DOCTYPE html>
+
+<!-- Một tài liệu html thì có 1 thẻ html -->
+<html lang="vi">
+  <!-- Phần đầu của tài liệu HTML chứa các thông tin meta, tiêu đề, liên kết đến các tệp CSS hoặc JavaScript -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ví dụ HTML</title>
+  </head>
+
+  <!-- Phần thân của tài liệu HTML chứa nội dung hiển thị trên trang web -->
+  <body>
+    <!-- Một đoạn văn bản, đây là block level element -->
+    <p>Đây là một đoạn văn bản.</p>
+
+    <!-- Một thẻ in đậm văn bản, đây là inline element -->
+    <p><b>Đây là văn bản in đậm.</b></p>
+
+    <!-- Một danh sách không có thứ tự, đây là block level element -->
+    <ul>
+      <!-- Một mục trong danh sách, đây là block level element -->
+      <li>Danh sách mục 1</li>
+      <li>Danh sách mục 2</li>
+    </ul>
+
+    <!-- Một đoạn văn bản, đây là inline element -->
+    <p>Đây là một <span style="color: red">đoạn văn</span> sử dụng thẻ span.</p>
+
+    <!-- Một hình ảnh, đây là inline element -->
+    <p>
+      <img
+        src="https://i.pinimg.com/736x/27/ac/3d/27ac3d4476236d31641b4130ac07a376.jpg"
+        alt="Ví dụ về hình ảnh"
+        style="width: 200px; height: auto"
+      />
+    </p>
+
+    <!-- Một liên kết, đây là inline element -->
+    <p>
+      <a href="https://web.facebook.com/huang.high.3/"
+        >Liên kết đến trang web khác</a
+      >
+    </p>
+    <!-- Có 2 loại đường dẫn: 
+- External link: là là liên kết trỏ đến tài nguyên hoặc trang web ngoài trang web hiện tại của bạn. 
+Khi người dùng nhấp vào liên kết ngoài, họ sẽ được chuyển đến một trang web hoàn toàn khác.
+- Internal link: là liên kết trỏ đến các phần khác của cùng một trang web hoặc tài liệu. 
+Chúng giúp điều hướng người dùng đến các phần khác của trang web mà không rời khỏi trang hiện tại.
+1. Đường dẫn tương đối: tính từ thư mục hiện thời (là thư mục đang thao tác)
+2. Đường dẫn tuyệt đối: tính từ thư mục gốc
+-->
+
+    <!-- Một bảng, đây là block level element -->
+    <table border="1">
+      <tr>
+        <th>Họ và tên</th>
+        <th>Mã sinh viên</th>
+        <th>Lớp</th>
+      </tr>
+      <tr>
+        <td>Nguyễn Việt Hoàng</td>
+        <td>231230791</td>
+        <td>CNTT3-K64</td>
+      </tr>
+      <tr>
+        <td>Trần Văn A</td>
+        <td>231230792</td>
+        <td>CNTT4-K64</td>
+      </tr>
+    </table>
+  </body>
+</html>

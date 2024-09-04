@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>HTML Optgroup Tag Example with Disabled Attribute</title>
+  </head>
   <body>
-    <!--This is 
-        Heading Tag-->
-    <h1>Heading Tag</h1>
-
-    <!--This is multi 
-        line 
-        comment-->
-    <h2>This is multi line comment</h2>
+    <h2>Choose a Programming Language:</h2>
+    <select>
+      <optgroup label="Web Development">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+      </optgroup>
+      <optgroup label="Desktop Development" disabled>
+        <option value="csharp">C#</option>
+        <option value="java">Java</option>
+        <option value="cpp">C++</option>
+      </optgroup>
+    </select>
   </body>
 </html>
