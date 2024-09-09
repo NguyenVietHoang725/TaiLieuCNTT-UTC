@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor D.Dog</title>
+    <link rel="stylesheet" type="text/css" href="Lab1.css" />
+    <script src="Lab1.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Dog D.Dog</h1>
+      </div>
+      <div class="block">
+        <div class="title">About</div>
+        <div class="content">
+          <p>Woof woof!</p>
+          <p>
+            Hi, I'm Dog. I love
+            <span style="color: #3dc2ec; font-weight: bold"
+              >User Interface Design.</span
+            >
+          </p>
+          <img src="ddd.png" alt="Dog Image" class="image" />
+        </div>
+      </div>
+      <div class="block">
+        <div class="title">Courses</div>
+        <div class="content">
+          <p>Here are some courses I've taken:</p>
+          <table>
+            <tr>
+              <th>Course Number</th>
+              <th>Course Title</th>
+              <th>Semester Taken</th>
+            </tr>
+            <tr>
+              <th colspan="3">For Credit</th>
+            </tr>
+            <tr>
+              <td class="course-number-credit">6.813</td>
+              <td><span style="color: #3fa2f6">User Interface Design</span></td>
+              <td><span style="color: #3fa2f6">Spring 2014</span></td>
+            </tr>
+            <tr>
+              <td class="course-number-credit">6.034</td>
+              <td>Artificial Intelligence</td>
+              <td>Fall 2013</td>
+            </tr>
+            <tr>
+              <td class="course-number-credit">6.006</td>
+              <td>Introduction to Algorithms</td>
+              <td>Fall 2013</td>
+            </tr>
+            <tr>
+              <th colspan="3">Listener</th>
+            </tr>
+            <tr>
+              <td class="course-number-listener">6.867</td>
+              <td>Machine Learning</td>
+              <td>Fall 2013</td>
+            </tr>
+            <tr>
+              <td class="course-number-listener">6.830</td>
+              <td>Database Systems</td>
+              <td>Fall 2012</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="block">
+        <div class="title">Interests</div>
+        <div class="content">
+          <p>
+            I am interested <span style="font-weight: 900">HCI</span>, memes,
+            and youtube videos.
+          </p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="title">Submit Pet Information</div>
+        <div class="content">
+          <p>
+            Would love to know what kinds of pets you 'own' (you'll never own
+            me). Submit below!
+          </p>
+          <form action="#" onsubmit="showSuccessMessage(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br />
+            <label for="phylum">Phylum:</label>
+            <input type="text" id="phylum" name="phylum" /><br />
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" /><br />
+            <input type="submit" value="Submit" />
+          </form>
+          <div
+            id="success-message"
+            style="display: none; color: green; margin-top: 10px"
+          >
+            Summit Successful
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

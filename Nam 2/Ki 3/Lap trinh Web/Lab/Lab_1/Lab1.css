@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(#c7c8cc, white);
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.header h1 {
+  margin-top: 0;
+}
+
+.header {
+  padding: 10px;
+}
+
+.block {
+  padding: 10px;
+  position: relative;
+}
+
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #96c9f4;
+  padding: 5px;
+  color: #0f67b1;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.image {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  max-width: 250px;
+  z-index: 1;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th {
+  border: 1px solid #000000;
+  padding: 5px;
+  text-align: center;
+}
+
+td {
+  padding: 5px;
+  border: 1px solid #000000;
+  text-align: left;
+}
+
+tr:nth-child(odd) td {
+  background-color: #f5eded;
+}
+
+tr:hover td {
+  background-color: #bedc74;
+}
+
+.course-number-credit {
+  font-weight: bold;
+  color: #050c9c;
+}
+
+.course-number-listener {
+  font-weight: bold;
+  color: #3abef9;
+}
+
+input[type="submit"] {
+  background-color: #b4b4b8;
+  color: #000000;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}

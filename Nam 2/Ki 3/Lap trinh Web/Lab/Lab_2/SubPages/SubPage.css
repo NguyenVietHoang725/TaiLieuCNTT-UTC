@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(#5cc2f2, white);
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background-color: #5cc2f2;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.block {
+  padding: 10px;
+}
+
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #96c9f4;
+  padding: 10px;
+  color: #0f67b1;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.gallery figure {
+  text-align: center;
+  margin: 10px;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  border: 2px solid #ddd;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Phóng to khi hover */
+}
+
+.gallery figcaption {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Style for Back to Main Page Button */
+.back-to-main {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.back-to-main a {
+  text-decoration: none;
+  background-color: #5cc2f2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.back-to-main a:hover {
+  background-color: #408fb9;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #5cc2f2;
+  color: white;
+  border-top: 1px solid #ccc;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.separator {
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+}

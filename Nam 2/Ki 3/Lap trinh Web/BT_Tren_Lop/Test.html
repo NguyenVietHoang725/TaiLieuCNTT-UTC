@@ -1,21 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>HTML Optgroup Tag Example with Disabled Attribute</title>
+    <meta charset="UTF-8" />
+    <title>Border Styles</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        line-height: 80px;
+        color: white;
+      }
+      .solid {
+        border: 2px solid #000;
+        background: #ff6347;
+      }
+      .dashed {
+        border: 2px dashed #000;
+        background: #4682b4;
+      }
+      .dotted {
+        border: 2px dotted #000;
+        background: #32cd32;
+      }
+      .double {
+        border: 4px double #000;
+        background: #ffa07a;
+      }
+      .groove {
+        border: 4px groove #000;
+        background: #8a2be2;
+      }
+      .ridge {
+        border: 4px ridge #000;
+        background: #d2691e;
+      }
+      .inset {
+        border: 4px inset #000;
+        background: #dc143c;
+      }
+      .outset {
+        border: 4px outset #000;
+        background: #adff2f;
+      }
+      .none {
+        border: none;
+        background: #fff;
+      }
+    </style>
   </head>
   <body>
-    <h2>Choose a Programming Language:</h2>
-    <select>
-      <optgroup label="Web Development">
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
-        <option value="javascript">JavaScript</option>
-      </optgroup>
-      <optgroup label="Desktop Development" disabled>
-        <option value="csharp">C#</option>
-        <option value="java">Java</option>
-        <option value="cpp">C++</option>
-      </optgroup>
-    </select>
+    <div class="box solid">Solid Border</div>
+    <div class="box dashed">Dashed Border</div>
+    <div class="box dotted">Dotted Border</div>
+    <div class="box double">Double Border</div>
+    <div class="box groove">Groove Border</div>
+    <div class="box ridge">Ridge Border</div>
+    <div class="box inset">Inset Border</div>
+    <div class="box outset">Outset Border</div>
+    <div class="box none">No Border</div>
   </body>
 </html>

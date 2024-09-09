@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.left {
+  flex: 1;
+  padding-left: 200px;
+}
+
+.left h1 {
+  font-size: 50px;
+  color: #1877f2;
+  font-weight: bold;
+}
+
+.left p {
+  font-size: 25px;
+  margin-top: 20px;
+  color: #1c1e21;
+}
+
+.right {
+  background-color: white;
+  padding: 20px;
+  margin-right: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1877f2;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #166fe5;
+}
+
+.forgot-password {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.forgot-password a {
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.create-account {
+  text-align: center;
+}
+
+.create-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #42b72a;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: #36a420;
+}
+
+/* Media Query cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+
+  .left {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .left h1 {
+    font-size: 36px;
+  }
+
+  .left p {
+    font-size: 18px;
+  }
+
+  .right {
+    margin-right: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 28px;
+  }
+
+  .left p {
+    font-size: 16px;
+  }
+
+  .right {
+    padding: 15px;
+  }
+
+  .login-btn,
+  .create-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

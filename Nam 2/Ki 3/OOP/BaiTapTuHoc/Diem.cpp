@@ -7,12 +7,15 @@ using namespace std;
 #define endl '\n'
 
 class Diem {
-    private:
-        float x, y;
-    public:
-        void nhap();
-        void xuat();
-        float tinhKhoangCach(Diem a);
+	
+private:
+    float x, y;
+    
+public:
+    void nhap();
+    void xuat();
+    float tinhKhoangCach(Diem a);
+    friend float tinhKhoangCach(Diem a, Diem b);
 };
 
 void Diem::nhap() {  
@@ -29,14 +32,22 @@ float Diem::tinhKhoangCach(Diem a) {
     return kc;
 }
 
+float tinhKhoangCach(Diem a, Diem b) {
+	float kc = sqrt(pow(b.x - a.x, 2) + pow(b.y - a.y, 2));
+	return kc;
+}
+
 int main() {
     Diem a, b;
     a.nhap();
     a.xuat();
     b.nhap();
     b.xuat();
-    float res = a.tinhKhoangCach(b);
-    cout << res << endl;  
+    float res1 = a.tinhKhoangCach(b);
+    cout << res1 << endl;  
+    
+    float res2 = tinhKhoangCach(a, b);
+    cout << res2 << endl;
     
     return 0;
 }

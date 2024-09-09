@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(#5cc2f2, white);
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.header h1 {
+  padding: 10px;
+  margin-top: 0;
+}
+
+.header {
+  padding: 10px;
+}
+
+.block {
+  padding: 10px;
+  position: relative;
+}
+
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #96c9f4;
+  padding: 5px;
+  color: #0f67b1;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content p {
+  background-color: #f0f8ff; /* Màu nền nhạt cho các đoạn văn bản */
+  border: 1px solid #ccc; /* Đường viền mỏng xung quanh đoạn văn bản */
+  border-radius: 5px; /* Bo tròn các góc của đoạn văn bản */
+  padding: 10px; /* Khoảng cách bên trong đoạn văn bản */
+  margin: 10px 0; /* Khoảng cách giữa các đoạn văn bản */
+  line-height: 1.6; /* Tăng khoảng cách giữa các dòng chữ */
+}
+
+.background-section {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh hai phần nằm bên cạnh nhau */
+  align-items: flex-start; /* Căn chỉnh phần trên cùng cho cả bảng và ảnh */
+  gap: 10px; /* Khoảng cách giữa bảng và ảnh */
+  padding: 10px 0;
+}
+
+.background-table {
+  flex: 3; /* Tạo không gian cho bảng chiếm nhiều hơn ảnh */
+}
+
+.background-image {
+  flex: 1; /* Tạo không gian cho ảnh chiếm ít hơn bảng */
+  display: flex;
+  justify-content: center; /* Căn giữa ảnh trong container */
+  align-items: center; /* Căn giữa ảnh theo chiều dọc */
+}
+
+.background-image img {
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của container */
+  height: auto; /* Đảm bảo tỷ lệ ảnh đúng */
+  border: 2px solid #ccc; /* Thêm viền cho ảnh nếu cần */
+  border-radius: 8px; /* Thêm góc bo tròn cho ảnh nếu cần */
+}
+
+.highlight {
+  background-color: #dbe2ef; /* Màu nền vàng nhạt để làm nổi bật */
+  color: #2772db; /* Màu chữ đen */
+  font-weight: bold; /* Chữ đậm */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th {
+  color: #3f72af;
+  background-color: #dbe2ef;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+td {
+  background-color: #f9f7f7;
+  padding: 5px;
+  text-align: left;
+}
+
+tr:hover td {
+  background-color: #c1eaf2;
+}
+
+table,
+th,
+td {
+  border: 4px solid #3f72af;
+}
+
+.interests-images a {
+  display: inline-block; /* Đảm bảo các hình ảnh hiển thị trên cùng một dòng */
+  margin: 10px; /* Khoảng cách giữa các hình ảnh */
+}
+
+.interests-images img {
+  width: 300px; /* Đặt kích thước cho hình ảnh */
+  height: auto; /* Đảm bảo tỉ lệ khung hình không bị biến dạng */
+  border-radius: 5px; /* Bo tròn các góc của hình ảnh */
+  border: 2px solid #ddd; /* Đường viền xung quanh hình ảnh */
+  transition: transform 0.3s; /* Hiệu ứng chuyển tiếp khi di chuột qua */
+}
+
+.interests-images img:hover {
+  transform: scale(1.1); /* Phóng to hình ảnh khi di chuột qua */
+}
+
+.interests-images {
+  display: flex;
+  justify-content: center; /* Căn giữa các hình ảnh */
+  gap: 20px; /* Khoảng cách giữa các hình ảnh */
+}
+
+figure {
+  text-align: center; /* Căn giữa chữ mô tả dưới hình ảnh */
+}
+
+.interest-icon {
+  width: 100px; /* Điều chỉnh kích thước hình ảnh nếu cần */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Đảm bảo hình ảnh được căn giữa */
+}
+
+figcaption {
+  font-size: 0.8em; /* Kích thước chữ nhỏ hơn */
+  color: #333; /* Màu chữ cho mô tả */
+  margin-top: 5px; /* Khoảng cách giữa hình ảnh và mô tả */
+}
+
+.separator {
+  border-top: 2px solid #ccc; /* Adjust the style, width, and color of the line */
+  margin: 20px 0; /* Add space above and below the line */
+  width: 100%; /* Adjust the width of the line */
+  align-self: center; /* Center the line horizontally */
+}
