@@ -30,7 +30,8 @@
 	+ Bo lap nguoc: for (A.rbegin() -> A.rend()) 
 */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
