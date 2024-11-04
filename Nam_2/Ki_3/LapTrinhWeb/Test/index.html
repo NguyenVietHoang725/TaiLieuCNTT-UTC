@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Đăng Nhập / Đăng Ký</title>
+  </head>
+  <body>
+    <header>
+      <h1>Đăng Nhập / Đăng Ký</h1>
+      <button id="loginButton">Đăng Nhập</button>
+    </header>
+    <main>
+      <div id="form-container">
+        <div id="toggle-container">
+          <button id="show-register">Tạo Tài Khoản</button>
+          <button id="show-login">Đăng Nhập</button>
+        </div>
+
+        <div id="login-form" class="form">
+          <input
+            type="text"
+            id="signin-email"
+            placeholder="Email hoặc Số điện thoại"
+            required
+          />
+          <input
+            type="password"
+            id="signin-password"
+            placeholder="Mật khẩu"
+            required
+          />
+          <button id="signin-submit">Đăng Nhập</button>
+        </div>
+
+        <div id="register-form" class="form hidden">
+          <input
+            type="text"
+            id="signup-name"
+            placeholder="Họ và Tên"
+            required
+          />
+          <input
+            type="text"
+            id="signup-phone"
+            placeholder="Số điện thoại"
+            required
+          />
+          <input type="email" id="signup-email" placeholder="Email" required />
+          <input
+            type="password"
+            id="signup-password"
+            placeholder="Mật khẩu"
+            required
+          />
+          <input
+            type="password"
+            id="signup-confirm-password"
+            placeholder="Xác nhận Mật khẩu"
+            required
+          />
+          <button id="signup-submit">Đăng Ký</button>
+        </div>
+
+        <div id="notification" class="notification hidden"></div>
+      </div>
+    </main>
+    <script src="Account.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sự kiện cộng đồng</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+      th {
+        border-top: 2px solid #007bff;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 8px;
+      }
+      .separator {
+        border-right: 2px solid #ccc; /* Đường dọc ngăn cách */
+        padding-right: 10px; /* Khoảng cách bên phải của ô Tên sự kiện */
+      }
+      .dropdown-content {
+        display: none;
+        overflow: hidden;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-top: 1px solid #ccc;
+      }
+      .dropdown-button {
+        cursor: pointer;
+        color: #007bff;
+        font-size: 20px;
+      }
+      .dropdown-button:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sự Kiện Cộng Đồng</h1>
+    <table>
+      <thead>
+        <tr>
+          <th class="separator" style="width: 60%">Tên sự kiện</th>
+          <!-- Đặt chiều rộng cho cột -->
+          <th style="width: 30%">Thời gian</th>
+          <!-- Đặt chiều rộng cho cột -->
+          <th style="width: 10%"></th>
+          <!-- Đặt chiều rộng cho cột -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chiếu phim miễn phí</td>
+          <td>15/11/2024, 18:00</td>
+          <td>
+            <i
+              class="fas fa-chevron-down dropdown-button"
+              onclick="toggleDropdown(this)"
+            ></i>
+          </td>
+        </tr>
+        <tr class="dropdown-content">
+          <td colspan="3">
+            Thông tin: Buổi chiếu phim miễn phí dành cho trẻ em, tại rạp 1.
+          </td>
+        </tr>
+        <tr>
+          <td>Sự kiện hợp tác với doanh nghiệp</td>
+          <td>22/11/2024, 19:00</td>
+          <td>
+            <i
+              class="fas fa-chevron-down dropdown-button"
+              onclick="toggleDropdown(this)"
+            ></i>
+          </td>
+        </tr>
+        <tr class="dropdown-content">
+          <td colspan="3">
+            Thông tin: Hợp tác với nhà hàng XYZ, tặng phiếu ăn cho người tham
+            gia.
+          </td>
+        </tr>
+        <tr>
+          <td>Lễ hội phim độc lập</td>
+          <td>30/11/2024, 17:00</td>
+          <td>
+            <i
+              class="fas fa-chevron-down dropdown-button"
+              onclick="toggleDropdown(this)"
+            ></i>
+          </td>
+        </tr>
+        <tr class="dropdown-content">
+          <td colspan="3">
+            Thông tin: Chiếu phim độc lập, có sự tham gia của các đạo diễn.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      function toggleDropdown(button) {
+        const dropdownRow =
+          button.parentElement.parentElement.nextElementSibling;
+
+        // Tìm tất cả các hàng dropdown và đóng lại nếu không phải hàng hiện tại
+        const allDropdowns = document.querySelectorAll(".dropdown-content");
+        allDropdowns.forEach((row) => {
+          if (row !== dropdownRow) {
+            row.style.display = "none"; // Đóng tất cả
+            const associatedButton =
+              row.previousElementSibling.querySelector(".dropdown-button");
+            associatedButton.classList.remove("fa-chevron-up"); // Đặt lại biểu tượng thành mũi tên xuống
+            associatedButton.classList.add("fa-chevron-down"); // Đặt lại biểu tượng thành mũi tên xuống
+          }
+        });
+
+        // Kiểm tra trạng thái của hàng hiện tại
+        if (dropdownRow.style.display === "table-row") {
+          dropdownRow.style.display = "none"; // Đóng hàng
+          button.classList.remove("fa-chevron-up"); // Đổi thành mũi tên xuống
+          button.classList.add("fa-chevron-down"); // Đổi thành mũi tên xuống
+        } else {
+          dropdownRow.style.display = "table-row"; // Hiển thị hàng
+          button.classList.remove("fa-chevron-down"); // Đổi thành mũi tên lên
+          button.classList.add("fa-chevron-up"); // Đổi thành mũi tên lên
+        }
+      }
+    </script>
+  </body>
+</html>

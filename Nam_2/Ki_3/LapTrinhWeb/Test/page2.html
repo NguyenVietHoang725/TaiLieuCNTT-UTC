@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="preloader" class="preloader-container">
+      <div class="container">
+        <div class="📦"></div>
+        <div class="📦"></div>
+        <div class="📦"></div>
+        <div class="📦"></div>
+        <div class="📦"></div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h1>Trang 2</h1>
+      <p>Chào mừng đến với trang 2!</p>
+      <a href="index.html" class="navigate-link">Quay lại trang chủ</a>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        // Ẩn preloader sau khi trang đã tải xong
+        document.getElementById("preloader").style.display = "none";
+        // Hiển thị nội dung chính
+        document.body.classList.add("loaded");
+      });
+    </script>
+  </body>
+</html>
