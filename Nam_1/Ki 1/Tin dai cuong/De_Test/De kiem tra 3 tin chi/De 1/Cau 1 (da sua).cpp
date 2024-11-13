@@ -7,6 +7,7 @@ struct DiemType
 	float x;
 	float y;
 };
+
 void NhapDay(DiemType a[], int n)
 {
 	printf("Nhap lan luot toa do cua cac diem:\n");
