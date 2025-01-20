@@ -1,0 +1,6 @@
+8	10	9	sum is 27
+10	10	9	sum is 29
+5	X	9	sum is 14
+7	0	6	sum is 13
+10	10	X	sum is 20
+X	X	5	sum is 5

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=QuickUnionUF
+comment0.text=\r\n\ QuickUnionUF\ implementation\ with\ improvements\ and\ fixes.\r\n
+comment1.params=n
+comment1.target=QuickUnionUF(int)
+comment2.params=
+comment2.target=int\ count()
+comment3.params=p
+comment3.target=int\ find(int)
+comment4.params=p
+comment4.target=void\ validate(int)
+comment5.params=p\ q
+comment5.target=boolean\ connected(int,\ int)
+comment6.params=p\ q
+comment6.target=void\ union(int,\ int)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

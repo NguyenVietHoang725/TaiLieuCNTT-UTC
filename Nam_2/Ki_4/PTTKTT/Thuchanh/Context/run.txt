@@ -1,0 +1,4 @@
+FlowNetwork{"tinyFN.txt"}
+FordFullkerson{"tinyFN.txt"}
+LongestCommonSubstring{"tale.txt","mobydick.txt"}
+BiPartileMatching{"testB.txt"}

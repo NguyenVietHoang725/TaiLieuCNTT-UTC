@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=UF
+comment1.params=n
+comment1.target=UF(int)
+comment1.text=\r\n\ Initializes\ an\ empty\ union-find\ data\ structure\ with\ {@code\ n}\ sites\r\n\ {@code\ 0}\ through\ {@code\ n-1}.\ Each\ site\ is\ initially\ in\ its\ own\r\n\ component.\r\n\r\n\ @param\ n\ the\ number\ of\ sites\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ n\ <\ 0}\r\n
+comment2.params=p
+comment2.target=int\ find(int)
+comment2.text=\r\n\ Returns\ the\ component\ identifier\ for\ the\ component\ containing\ site\ {@code\ p}.\r\n\r\n\ @param\ p\ the\ integer\ representing\ one\ site\r\n\ @return\ the\ component\ identifier\ for\ the\ component\ containing\ site\ {@code\ p}\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ p\ <\ n}\r\n
+comment3.params=
+comment3.target=int\ count()
+comment3.text=\r\n\ Returns\ the\ number\ of\ components.\r\n\r\n\ @return\ the\ number\ of\ components\ (between\ {@code\ 1}\ and\ {@code\ n})\r\n
+comment4.params=p\ q
+comment4.target=boolean\ connected(int,\ int)
+comment4.text=\r\n\ Returns\ true\ if\ the\ two\ sites\ are\ in\ the\ same\ component.\r\n\r\n\ @param\ p\ the\ integer\ representing\ one\ site\r\n\ @param\ q\ the\ integer\ representing\ the\ other\ site\r\n\ @return\ {@code\ true}\ if\ the\ two\ sites\ {@code\ p}\ and\ {@code\ q}\ are\ in\ the\ same\ component;\r\n\ {@code\ false}\ otherwise\r\n\ @throws\ IllegalArgumentException\ unless\r\n\ both\ {@code\ 0\ <\=\ p\ <\ n}\ and\ {@code\ 0\ <\=\ q\ <\ n}\r\n
+comment5.params=p\ q
+comment5.target=void\ union(int,\ int)
+comment5.text=\r\n\ Merges\ the\ component\ containing\ site\ {@code\ p}\ with\ the\r\n\ component\ containing\ site\ {@code\ q}.\r\n\r\n\ @param\ p\ the\ integer\ representing\ one\ site\r\n\ @param\ q\ the\ integer\ representing\ the\ other\ site\r\n\ @throws\ IllegalArgumentException\ unless\r\n\ both\ {@code\ 0\ <\=\ p\ <\ n}\ and\ {@code\ 0\ <\=\ q\ <\ n}\r\n
+comment6.params=p
+comment6.target=void\ validate(int)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment7.text=\r\n\ Main\ method\ to\ test\ union-find.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=8

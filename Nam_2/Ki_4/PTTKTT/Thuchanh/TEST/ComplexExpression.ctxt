@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ComplexExpression
+comment1.params=complexExpression
+comment1.target=ComplexExpression(java.lang.String)
+comment2.params=s
+comment2.target=boolean\ isOperator(java.lang.String)
+comment3.params=
+comment3.target=int\ interpret()
+numComments=4

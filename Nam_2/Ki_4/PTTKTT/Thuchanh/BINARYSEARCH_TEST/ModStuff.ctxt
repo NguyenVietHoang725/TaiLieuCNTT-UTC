@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ModStuff
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=value\ n
+comment2.target=java.math.BigInteger\ modInv(java.math.BigInteger,\ java.math.BigInteger)
+numComments=3

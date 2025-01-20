@@ -1,0 +1,137 @@
+
+Bai toan tim uoc chung lon nhat cua 2 so: 
+
+Cho a, b la 2 so nguyen duong, a > b, tim uoc chung lon nhat cua a va b? 
+
+gcd
+
+
+fun gcd (m:int, 0):int = m
+  | gcd (0, n:int):int = n
+  | gcd (m:int, n:int):int =
+    if m>n then gcd (m-n, n) else gcd (m,n-m); 
+
+
+fun gcd (m:int, 0):int = m
+  | gcd (0, n:int):int = n
+  | gcd (m:int, n:int):int =
+    if m>n then gcd (m mod n, n) else gcd (m, n mod m) 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+Bai toan tinh luy thua: 
+
+Cho a va so nguyen duong n, tinh 
+
+a
+
+
+
+
+fun square (x) = x * x;
+
+fun mult (a, x) = a * x;
+
+fun exponent(a,0) = 1 | exponent(a,n) = mult(a,exponent(a,n-1)); 
+
+fun fast_exp (a, 0) = 1
+  | fast_exp (a, n) =
+    if n mod 2 = 0 then
+       square (fast_exp (a, n div 2))
+    else
+       mult (a, fast_exp (a, n-1)) 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Tim giao dich khong hop le: 
+
+Cho 
+
+- Danh sach cac tai khoan hop le - goi la White list
+
+- Cho danh sach cac giao dich trong 1 ngay nao do Transactions gom ma tai khoan giao dich 
+(so tien giao dich, ....)
+
+Tim: 
+- Danh sach cac giao dich hop le, tuc la cac giao dich co ma tai khoan 
+nam trong danh sach cac tai khoan hop le White list.
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+fun insert(less,x,nil) = [x]
+| insert(less,x,y::ys) = if less(x,y) then x::y::ys
+  else y::insert(less,x,ys); 
+ 
+fun sort(less,nil) = nil
+  | sort(less,x::xs) = insert(less,x,sort(less,xs));
+ 
+fun less(x,y) = x < y; 
+
+sort(less,[9,5,8,2,7,1]); 
+
+fun bigger(x, y) = x > y;
+
+sort(bigger, [5,9,2,6,1,8,3]);  
+
+fun less(x:string,y) = x < y; 
+
+sort(less,["quan","yen","binh"]);
+
+-------------------
+***qsort
+
+;
+
+fun qsort nil = nil
+ | qsort [singleton] = [singleton]
+ | qsort (first::rest) =
+let
+val (smalls, bigs) =
+partition(first,rest)
+in
+qsort(smalls) @ [first] @ qsort(bigs)
+end
+
+qsort [4,2,5,1,8,6,9,7];
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fun equal(x:int,y) = x=y 
+
+fun search(x, nil) = false | search(x, fst::rest) = if equal(x,fst) then true else search(x,rest) 
+
+
+datatype ’a tree = Niltree |
+Maketree of ’a * (’a tree) * (’a tree) 
+
+fun insert (new:int) Niltree =
+Maketree(new,Niltree,Niltree)
+ | insert new (Maketree (root,l,r)) =
+if new < root
+then Maketree (root,(insert new l),r)
+else Maketree (root,l,(insert new r))
+
+fun buildtree [] = Niltree
+ | buildtree (fst :: rest) =
+insert fst (buildtree rest)
+
+fun find (elt:int) Niltree = false
+ | find elt (Maketree (root,left,right)) =
+if elt = root
+then true
+else if elt < root
+then find elt left
+else find elt right (* elt > root *)
+
+val cay = buildtree [9,1,10,3,7,8,4]
+
+find 3 cay
+
+fun bsearch elt list =
+find elt (buildtree list); 
+
+val x = bsearch 7  [9,1,10,3,7,5,4,8];

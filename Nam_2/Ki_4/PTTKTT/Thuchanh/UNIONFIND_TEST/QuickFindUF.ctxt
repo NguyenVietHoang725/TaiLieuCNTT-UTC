@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=QuickFindUF
+comment0.text=\r\n\ The\ {@code\ QuickFindUF}\ class\ represents\ a\ union-find\ data\ type\r\n\ (also\ known\ as\ the\ disjoint-sets\ data\ type).\r\n\ It\ supports\ the\ union\ and\ find\ operations,\r\n\ along\ with\ a\ connected\ operation\ for\ determining\ whether\r\n\ two\ sites\ are\ in\ the\ same\ component\ and\ a\ count\ operation\ that\r\n\ returns\ the\ total\ number\ of\ components.\r\n
+comment1.params=n
+comment1.target=QuickFindUF(int)
+comment1.text=\r\n\ Initializes\ an\ empty\ union-find\ data\ structure\ with\ {@code\ n}\ sites\r\n\ {@code\ 0}\ through\ {@code\ n-1}.\ Each\ site\ is\ initially\ in\ its\ own\ component.\r\n\r\n\ @param\ n\ the\ number\ of\ sites\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ n\ <\ 0}\r\n
+comment2.params=
+comment2.target=int\ count()
+comment2.text=Returns\ the\ number\ of\ components.
+comment3.params=p
+comment3.target=int\ find(int)
+comment3.text=Returns\ the\ component\ identifier\ for\ the\ component\ containing\ site\ {@code\ p}.
+comment4.params=p
+comment4.target=void\ validate(int)
+comment4.text=Validates\ that\ p\ is\ a\ valid\ index.
+comment5.params=p\ q
+comment5.target=boolean\ connected(int,\ int)
+comment5.text=Returns\ true\ if\ the\ two\ sites\ are\ in\ the\ same\ component.
+comment6.params=p\ q
+comment6.target=void\ union(int,\ int)
+comment6.text=Merges\ the\ component\ containing\ site\ {@code\ p}\ with\ the\ component\ containing\ site\ {@code\ q}.
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment7.text=Reads\ pairs\ of\ integers\ from\ input,\ merges\ components,\ and\ prints\ results.
+numComments=8

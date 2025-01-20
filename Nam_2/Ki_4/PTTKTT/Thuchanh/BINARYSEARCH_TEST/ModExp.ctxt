@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ModExp
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=base\ exp\ n
+comment2.target=java.math.BigInteger\ modExp(java.math.BigInteger,\ java.math.BigInteger,\ java.math.BigInteger)
+comment3.params=base\ exp\ n
+comment3.target=java.math.BigInteger\ modExpRec(java.math.BigInteger,\ java.math.BigInteger,\ java.math.BigInteger)
+numComments=4

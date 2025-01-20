@@ -1,0 +1,2 @@
+BinarySearch{"tinyW.txt"}
+BinarySearch{"largeW.txt"}

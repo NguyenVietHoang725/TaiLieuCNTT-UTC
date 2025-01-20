@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=BinarySearch
+comment0.text=\r\n\ The\ {@code\ BinarySearch}\ class\ provides\ a\ static\ method\ for\ binary\r\n\ searching\ for\ an\ integer\ in\ a\ sorted\ array\ of\ integers.\r\n\r\n\ <p>The\ <em>indexOf</em>\ operation\ takes\ logarithmic\ time\ in\ the\ worst\ case.</p>\r\n\r\n\ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/11model">Section\ 1.1</a>\ of\r\n\ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n
+comment1.params=
+comment1.target=BinarySearch()
+comment1.text=\r\n\ This\ class\ should\ not\ be\ instantiated.\r\n
+comment2.params=a\ key
+comment2.target=int\ indexOf(int[],\ int)
+comment2.text=\r\n\ Returns\ the\ index\ of\ the\ specified\ key\ in\ the\ specified\ array.\r\n\r\n\ @param\ a\ \ \ the\ array\ of\ integers,\ must\ be\ sorted\ in\ ascending\ order\r\n\ @param\ key\ the\ search\ key\r\n\ @return\ index\ of\ key\ in\ array\ {@code\ a}\ if\ present;\ {@code\ -1}\ otherwise\r\n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ Reads\ integers\ from\ a\ file,\ reads\ integers\ from\ standard\ input,\r\n\ and\ prints\ those\ integers\ that\ do\ not\ appear\ in\ the\ file.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=4

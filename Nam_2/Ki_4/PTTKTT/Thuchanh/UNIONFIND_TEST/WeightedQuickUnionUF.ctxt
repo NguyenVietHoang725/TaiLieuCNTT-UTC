@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=WeightedQuickUnionUF
+comment0.text=\r\n\ \ The\ {@code\ WeightedQuickUnionUF}\ class\ represents\ a\ <em>union-find\ data\ type</em>\r\n\ \ (also\ known\ as\ the\ <em>disjoint-sets\ data\ type</em>).\r\n\ \ It\ supports\ the\ <em>union</em>\ and\ <em>find</em>\ operations,\r\n\ \ along\ with\ a\ <em>connected</em>\ operation\ for\ determining\ whether\r\n\ \ two\ sites\ are\ in\ the\ same\ component\ and\ a\ <em>count</em>\ operation\ that\r\n\ \ returns\ the\ total\ number\ of\ components.\r\n\ \ ...\r\n
+comment1.params=n
+comment1.target=WeightedQuickUnionUF(int)
+comment2.params=
+comment2.target=int\ count()
+comment3.params=p
+comment3.target=int\ find(int)
+comment4.params=p
+comment4.target=void\ validate(int)
+comment5.params=p\ q
+comment5.target=boolean\ connected(int,\ int)
+comment6.params=p\ q
+comment6.target=void\ union(int,\ int)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

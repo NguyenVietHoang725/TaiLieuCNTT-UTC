@@ -1,0 +1,6 @@
+﻿lookupIndex "movies.txt", "/"
+lookupcsv "ip.csv"
+Dedup "tinyTale.txt"
+FileIndex "ex1.txt" "ex2.txt" "ex3.txt"
+WhiteFilter list.txt  tinyTale.txt
+FrequencyCounter "8"
